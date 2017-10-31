@@ -1665,7 +1665,7 @@ GtkTreeView.view.trough:selected {
 
 .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .slider {
     margin: 0;
-    background-color: shade(@theme_bg_color, 0.6);
+    background-color: shade(#B4C994, 0.6);
     background-image: none;
 }
 
@@ -1699,10 +1699,10 @@ GtkTreeView.view.trough:selected {
 .scrollbar.slider.vertical {
     border: 1px solid @border;
     border-radius: 20px;
-    background-color: transparent;
+    background-color: #B4C994;
     background-image: linear-gradient(to right,
-                            shade(@theme_bg_color, 1.12),
-                            shade(@theme_bg_color, 0.95));
+                            shade(#B4C994, 1.12),
+                            shade(#B4C994, 0.95));
     box-shadow: 1px 0 alpha(white, 0.5);
 }
 
@@ -1714,7 +1714,7 @@ GtkTreeView.view.trough:selected {
 
 .scrollbar.fine-tune .slider {
     border: 3px solid transparent;
-    background-color: @theme_selected_bg_color;
+    background-color: #B4C994;
     background-image: none;
     box-shadow: none;
 }
