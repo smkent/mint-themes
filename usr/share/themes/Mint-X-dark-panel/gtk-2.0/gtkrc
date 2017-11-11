@@ -499,6 +499,15 @@ style "xfsm-logout"
 	}
 }
 
+style "scrollbar-m"
+{
+	xthickness = 2
+	ythickness = 2
+	bg[PRELIGHT] = "#B4C994"
+	bg[ACTIVE] = "#B4C994"
+	bg[NORMAL] = "#F5F3EB"
+}
+
 ## Import external style files ##
 
 include "styles/bars.rc"
@@ -518,7 +527,8 @@ include "styles/views.rc"
 ## Apply the styles to the appropriate widgets ##
 
 class "GtkWidget" style "default"
-class "GtkScrollbar" style "scrollbar"
+class "GtkScrollbar" style "scrollbar-m"
+class "*GtkScrolledWindow*Scrollbar" style "scrollbar-m"
 class "GtkButton" style "button"
 class "GtkEntry" style "entry"
 class "GtkOldEditable" style "entry"
